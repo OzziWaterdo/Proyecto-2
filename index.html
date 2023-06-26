@@ -13,7 +13,9 @@
 </head>
 <body>
      <!-- Java Scrip -->
-     <script src="js/main.js"></script>
+     <script src="js\main.js"></script>
+    
+     
 
 
     <!-- Estructura del header  -->
@@ -38,7 +40,7 @@
         <a name="arriba"></a>
 
         <section id="foto">
-           <img src="https://scontent.fmar5-1.fna.fbcdn.net/v/t39.30808-6/284132737_1045254233032906_8740656100016497532_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=0iij7P0V1JAAX_apFKN&_nc_ht=scontent.fmar5-1.fna&oh=00_AfAXkEfpDOoGT7L4UA041lZQVnC_ml_5k2QfhEXc9aiMVA&oe=6449E77B" alt="foto" width="320"> 
+           <img src="img\Perfil.png" alt="foto" width="320"> 
         </section>
 
         <section class="seccion-1">
@@ -70,6 +72,25 @@
             </div>
         </section>
 
+        
+  <section class="formulario" id="formulario">
+    <h2>Formulario de contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+      
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required><br><br>
+      
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto" required><br><br>
+      
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+      
+      <input type="button" value="Enviar" onclick="enviarMensaje()">
+    </form>
+  </section>
 
 
     </main>
@@ -78,7 +99,7 @@
 <br>
     <footer>
         <h2>Oswado Aguado</h2>
-        <p>Proyecto 1 de Codigo Pa'Lante</p>
+        <p>Proyecto 2 de Codigo Pa'Lante</p>
         <div class="boton-arriba">
         <a href="#arriba">Ir al inicio</a>
     </div>
