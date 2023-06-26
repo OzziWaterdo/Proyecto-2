@@ -9,6 +9,10 @@ function enviarMensaje() {
     window.alert("Se ha enviado tu mensaje.");
     console.log("Nombre: " + nombre);
     console.log("Apellido: " + apellido);
+    console.log("Correo: " + correo);
     console.log("Asunto: " + asunto);
     console.log("Mensaje: " + mensaje);
   }
+
+ 
+ 

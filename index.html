@@ -7,7 +7,8 @@
     <title>Oswaldo Aguado</title>
     <!-- Scrip Awesome Fonts -->
     <script src="https://kit.fontawesome.com/154ae57926.js" crossorigin="anonymous"></script>
-   
+    <script src="https://kit.fontawesome.com/46b7ceee20.js" crossorigin="anonymous"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -21,7 +22,7 @@
     <!-- Estructura del header  -->
     <header>
         <div class="Logo">
-        <img src="https://icones.pro/wp-content/uploads/2021/06/symbole-github-violet.png" alt="https://icones.pro/wp-content/uploads/2021/06/symbole-github-violet.png" width="100">
+        <img src="img\Logo.png" alt="https://icones.pro/wp-content/uploads/2021/06/symbole-github-violet.png" width="100">
         </div>
         
         <nav>
@@ -51,7 +52,8 @@
             </article>
             <!-- boton de descarga del CV  -->
             <div class="boton">
-                <button id="descargarCV"><a href="https://drive.google.com/file/d/1iA43MjNMiACZaX7x6t8Z3PsZez7pevKA/view?usp=sharing" download="CV Oswaldo Jesus Aguado Sarcos">Descargar CV</a></button>
+            <button id="descargarCV"><a href="https://drive.google.com/file/d/1iA43MjNMiACZaX7x6t8Z3PsZez7pevKA/view?usp=sharing" download="CV Oswaldo Jesus Aguado Sarcos">Descargar CV</a>
+            </button>  
             </div>
 
         </section>
@@ -81,6 +83,9 @@
       
       <label for="apellido">Apellido:</label>
       <input type="text" id="apellido" name="apellido" required><br><br>
+
+      <label for="correo">Correo:</label>
+      <input type="text" id="asunto" name="asunto" required><br><br>
       
       <label for="asunto">Asunto:</label>
       <input type="text" id="asunto" name="asunto" required><br><br>
@@ -97,13 +102,34 @@
 
 <!-- Estructura del footer  -->
 <br>
-    <footer>
-        <h2>Oswado Aguado</h2>
-        <p>Proyecto 2 de Codigo Pa'Lante</p>
-        <div class="boton-arriba">
-        <a href="#arriba">Ir al inicio</a>
+<footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img\Logo.png" alt="Logo" width="100">
+        </div>
+        <div class="footer-links">
+          <ul class="footer-menu">
+            <li><a href="#arriba">Arriba</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/oswaldo.aguado.14"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/oswald_oz/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/oswaldo-jesus-aguado-sarcos-24925aba/"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Proyecto 2 Código Pa’Lante Comisión 23</p>
+      </div>
     </div>
-    </footer>
+  </footer>
 </body>
 </html>
 <!-- Hasta aqui por ahora -->

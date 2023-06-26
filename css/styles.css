@@ -63,6 +63,7 @@ body {
     background-color: #fbfbfb;
     line-height: 1.2;
     max-width: 1200px;
+    min-height: 100vh;
     padding: auto;
     margin: auto;
    
@@ -71,16 +72,20 @@ body {
 /* Agregandole los estilos al header */
 
 header {
-    background-color: #fbfbfb;
+    background-color: #4d4d4d;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px;
     height: 90px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-    position: fixed;
+    position: relative;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1920px;
     margin: auto;
 
     
@@ -95,14 +100,15 @@ header {
     display: inline-block;
     padding: 0px 3.5px;
     font-weight: bold;
-    box-shadow: inset 0 0 0 0 rgba(175, 89, 158, 0.1);
+    box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
     border-radius: 5px;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    color: #fff;
 }
 
 .links-de-navegacion  li:hover {
-    color: #fbfbfb;
-    box-shadow: inset 200px 0 0 0 rgba(175, 89, 158, 0.7);
+    color: #000;
+    box-shadow: inset 200px 0 0 0 rgb(255, 254, 255);
 }
 
 .nav_links {
@@ -155,7 +161,7 @@ main {
 }
 
 #descargarCV {
-    background-color: #af599e;
+    background-color: #4d4d4d;
     color: #fbfbfb;
     border: none;
     border-radius: 50px;
@@ -170,14 +176,14 @@ main {
 #descargarCV:hover {
     background-color: rgba(175, 89, 158, 0.3);
     color: #fbfbfb;
-    box-shadow: inset 200px 0 0 0 #af599e;
+    box-shadow: inset 200px 0 0 0 #d80c0c;
 }
 
 /* Seccion de contatos */
 .contactos {
-    background-color: rgba(175, 89, 158, 0.3);
+    background-color: #4d4d4d;
     border-radius: 10px;
-    color: #0f0f0f;
+    color: #fff;
     padding: 20px;
     text-align: center;
     width: 100%;
@@ -219,12 +225,12 @@ main {
 
 .links li:hover::before {
     transform: scale(0.9);
-    box-shadow: 0 0 15px #af599e;
+    box-shadow: 0 0 15px #d11010;
 }
 
 .links li:hover {
-    color: #af599e;
-    text-shadow: 0 0 5px #af599e;
+    color: #d11010;
+    text-shadow: 0 0 5px #af5959;
     border-radius: 400px;
 }
 
@@ -239,6 +245,7 @@ main {
     border: 2px solid #000;
     padding: 20px;
     text-align: left;
+    
   }
   
   input[type="text"],
@@ -247,14 +254,18 @@ main {
     box-sizing: border-box;
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
   }
   
   input[type="button"] {
+    display: block;
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #333;
     color: #fff;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
   }
   
@@ -265,19 +276,100 @@ main {
   }
 
 /* Estilo del footer */
-footer {
-    height: 90px;
-    background-color: #af599e;
-    font-family: "Lato"; width: 700;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fbfbfb;
+.footer {
+    font-size: 18px;
     width: 100%;
-    
-
-   
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    border-radius: 10px;
+    position: static;
+    bottom: 0;
+    left: 0;
 }
+  
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+  
+.footer-content {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+  
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+  
+.footer-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+.footer-menu li:last-child {
+    margin-right: 0;
+}
+  
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+.social-icons li:last-child {
+    margin-right: 0;
+}
+  
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+  
+.footer-bottom p {
+    margin: 0;
+}
+  
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+    .footer-menu{
+        text-align: left;
+    }
+    .footer-menu li {
+      display: block;
+      margin-bottom: 10px;
+    }
+}
+  
+.attribute{
+    position: absolute;
+    bottom: 10px;
+}
+
 
 /* Boton de volver arriba */
 .boton-arriba a{
