@@ -136,9 +136,8 @@ main {
 
 }
 
-/* Scciones del main */
+/* Seciones del main */
 .seccion-1 {
-    min-height: 100vh;
     margin: 0 10px;
     padding: 20px;
 
@@ -157,6 +156,7 @@ main {
 .boton {
     display: flex;
     justify-content: center;
+    padding: 40px;
 }
 
 #descargarCV {
@@ -178,21 +178,28 @@ main {
     box-shadow: inset 200px 0 0 0 #d80c0c;
 }
 
+h1{
+    text-align: center;
+
+}
+
 /* seccion de sobre mi */
 .seccion-3{
-    min-height: 100vh;
-    margin: -100px 10px;
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
+    gap: 1rem;
 
 }
 
 
 .flip-card {
-    width: 300px;
+    max-width: 300px;
     height: 400px;
     perspective: 1000px;
+    width: 100%;
+    box-shadow: -1px 8px 16px -8px rgba(0,0,0,1);
+    border-radius: 10px;
 
 }
   
@@ -267,6 +274,20 @@ main {
     bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    
+    .seccion-3{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    
+    }
+    
+
+  }
+
 .seccion-2{
     padding: 0 20px 50px 20px;
     display: flex;
@@ -330,6 +351,17 @@ main {
     border-radius: 400px;
 }
 
+@media  (max-width: 768px){
+
+    .links ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+}
+
+}
+
 /* Estilo del formulario */
 .formulario h2 {
     margin: 0 10px;
@@ -376,7 +408,6 @@ main {
 .footer {
     margin: 20px;
     font-size: 18px;
-    width: 100%;
     background-color: #333;
     color: #fff;
     padding: 30px 0;
@@ -455,8 +486,19 @@ main {
         row-gap: 20px;
     }
     .footer-menu{
-        text-align: left;
+        text-align: center;
     }
+
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icons{
+        display: flex;
+        justify-content: center;
+    }
+
     .footer-menu li {
       display: block;
       margin-bottom: 10px;
@@ -490,4 +532,6 @@ main {
     box-shadow: 0 0 15px #af599e;
 }
 /* hasta aqui por ahora! */
+
+
 
