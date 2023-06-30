@@ -21,8 +21,6 @@ function enviarMensaje() {
   document.getElementById("asunto").value = "";
   document.getElementById("mensaje").value = "";
 }
-
-
 //Modo Noche
 
 document.body.style="background-color: var(--bs-dark);transition: 0.5s; color: var(--text-color)"
