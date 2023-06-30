@@ -3,6 +3,7 @@
 function enviarMensaje() {
   var nombre = document.getElementById("nombre").value;
   var apellido = document.getElementById("apellido").value;
+  var correo = document.getElementById("correo").value;
   var asunto = document.getElementById("asunto").value;
   var mensaje = document.getElementById("mensaje").value;
 
@@ -12,6 +13,13 @@ function enviarMensaje() {
   console.log("Correo: " + correo);
   console.log("Asunto: " + asunto);
   console.log("Mensaje: " + mensaje);
+
+  // Borrar los datos de los campos de entrada
+  document.getElementById("nombre").value = "";
+  document.getElementById("apellido").value = "";
+  document.getElementById("correo").value = "";
+  document.getElementById("asunto").value = "";
+  document.getElementById("mensaje").value = "";
 }
 
 
