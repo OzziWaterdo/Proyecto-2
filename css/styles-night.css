@@ -1,13 +1,6 @@
-/* En este archivo escriban su CSS */
-
 /* Fonts */
-/* Importar aquí la font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-
-/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
-*  cuyos valores asigna por defecto el navegador.
-*/
 
 /* Reset */
 * {
@@ -37,35 +30,18 @@ main {
     margin: auto;
 }
 
-/* Recomendaciones! 
-*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
-*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
-*
-*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
-*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
-*
-*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
-*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
-*
-*  - Usen mucho las herramientas para desarrolladores del navegador para ir
-*    probando el CSS que escriben, resolver dudas y problemas.
-*
-*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
-*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
-*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
-*/
-
 
 /* Aplicando las fuentes al body */
 body {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
-    background-color: #fbfbfb;
+    background-color: #000;
     line-height: 1.2;
     max-width: 1200px;
     min-height: 100vh;
     padding: auto;
     margin: auto;
+    color: #fff;
    
 }
 
@@ -78,7 +54,7 @@ header {
     align-items: center;
     padding: 0 20px;
     height: 90px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    box-shadow: hsla(0, 0%, 0%, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     position: relative;
     border: none;
     border-radius: 10px 10px 0 0;
@@ -89,6 +65,41 @@ header {
     margin: auto;
  
 }
+
+.container-btn-mode{
+    position: absolute;
+    top:20px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 2;
+    font-size:0;
+  }
+  .btn-mode{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border:2px solid black;
+    transition: background-color .5s;
+  }
+  .btn-mode i {
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .btn-mode.sun{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid transparent;
+  }
+  .btn-mode.moon{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .active{
+    background-color:black;
+    color:#ffcd5c !important;
+  }
 
 /* Agragando estilos a los botones de navegacion */
 .links-de-navegacion {
@@ -160,15 +171,15 @@ main {
 }
 
 #descargarCV {
-    background-color: #4d4d4d;
-    color: #fbfbfb;
+    background-color: #fff;
+    color: #000;
     border: none;
     border-radius: 50px;
     font-size: 25px;
     width: 200px;
     height: 60px;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 rgba(175, 89, 158, 0.1);
+    box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0.1);
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
@@ -321,7 +332,7 @@ h1{
     display: inline-block;
     padding: 20px;
     font-size: 100px;
-    color: rgba(0, 0, 0, 0.5);
+    color: #fff;
     position: relative;
     transition: .5s;
 }
@@ -371,7 +382,7 @@ h1{
     width: 80%;
     max-width: 400px;
     margin: 0 auto;
-    border: 2px solid #000;
+    border: 2px solid #fff;
     padding: 20px;
     text-align: left;
     
@@ -532,6 +543,3 @@ h1{
     box-shadow: 0 0 15px #af599e;
 }
 /* hasta aqui por ahora! */
-
-
-
